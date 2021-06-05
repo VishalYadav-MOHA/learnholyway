@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "870851040464",
+    "project_id": "moha-3c7a3",
+    "storage_bucket": "moha-3c7a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870851040464:android:f9ab9ce9f57cbe2febfad5",
+        "android_client_info": {
+          "package_name": "com.example.moha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870851040464-1aj39id16p38irgh6l99asepho9vrjgg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU8FjcOGu81NwR3daLN8k_J4FsyUAHnoQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870851040464-1aj39id16p38irgh6l99asepho9vrjgg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

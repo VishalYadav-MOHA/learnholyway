@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF">
+
+    <LinearLayout
+        android:id="@+id/llActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#24A0FF"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txtActionBar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/textviewforchevret"
+            android:drawableLeft="@drawable/ic_baseline_chevron_left_24"
+            android:gravity="left|center"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageUser"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_porficon4" />
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="User Name"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUser"
+        android:layout_centerHorizontal="true"
+        android:text=" Student\nPremium"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="329dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/tvSP"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/styleforall"
+        android:drawableStart="@drawable/ic_baseline_mail_outline_24"
+        android:drawablePadding="20dp"
+        android:hint="student@gmail.com"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textSize="12dp" />
+
+    <EditText
+        android:id="@+id/etPNumber"
+        android:layout_width="329dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/etEmail"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/styleforall"
+        android:drawableStart="@drawable/ic_baseline_phone_android_24"
+        android:drawablePadding="20dp"
+        android:hint="+917411991542"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tvGender"
+        android:layout_width="159dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/etPNumber"
+        android:layout_alignLeft="@+id/etPNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/styleforall"
+        android:padding="10dp"
+        android:text="Gender"
+        android:textColor="#24A0FF"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tvCourse"
+        android:layout_width="158dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/etPNumber"
+        android:layout_alignRight="@+id/etPNumber"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/styleforall"
+
+        android:padding="10dp"
+        android:text="Course"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tvSavedPost"
+        android:layout_width="329dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/tvGender"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/styleforall"
+        android:drawableLeft="@drawable/ic_heart_removebg"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:padding="0dp"
+        android:text="Saved Posts"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tvQuestins"
+        android:layout_width="329dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/tvSavedPost"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/styleforall"
+        android:drawableLeft="@drawable/ic_question"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="My Questions  Answers"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tvCards"
+        android:layout_width="329dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/tvQuestins"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/styleforall"
+        android:drawableLeft="@drawable/ic_baseline_credit_card_24"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="My Cards &amp; Wallet"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tvHelp"
+        android:layout_width="329dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/tvCards"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/styleforall"
+        android:drawableLeft="@drawable/ic_baseline_help_outline_24"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="Help "
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/tvSetting"
+        android:layout_width="329dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/tvHelp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/styleforall"
+        android:drawableLeft="@drawable/ic_baseline_settings_24"
+        android:drawablePadding="20dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:text="Setting"
+
+        android:textSize="12dp" />
+
+
+</RelativeLayout>

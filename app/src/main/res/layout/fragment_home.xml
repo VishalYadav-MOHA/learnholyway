@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imgprof"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/icon_launcher" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgprof"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Vishal Yadav"
+        android:textSize="15dp"
+        android:textStyle="bold"
+
+        />
+
+
+    <TextView
+        android:id="@+id/txtStdPrm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_centerHorizontal="true"
+        android:text="Student | Premium"
+        android:textSize="12dp"
+
+        />
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtStdPrm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llSalah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgSalahTiming"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:background="@drawable/storyicon"
+                android:backgroundTint="#33aaff"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_baseline_schedule_24" />
+
+
+            <TextView
+                android:id="@+id/txtSalahTiming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Salah Timing"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llZakat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtStdPrm"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/llSalah"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgZakatCal"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/txtStdPrm"
+                android:layout_gravity="center"
+                android:layout_toRightOf="@+id/imgSalahTiming"
+                android:background="@drawable/storyicon"
+                android:backgroundTint="#33aaff"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_calculate_24" />
+
+
+            <TextView
+                android:id="@+id/txtZakatCal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgZakatCal"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/txtSalahTiming"
+                android:gravity="center"
+                android:text="Zakat Calculator"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llIslamCal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imgIslamCal"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/txtStdPrm"
+                android:layout_gravity="center"
+                android:background="@drawable/storyicon"
+                android:backgroundTint="#33aaff"
+                android:gravity="center"
+                android:scaleType="center"
+                android:src="@drawable/ic_baseline_calendar_today_24" />
+
+
+            <TextView
+                android:id="@+id/txtIsalmicCal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgIslamCal"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/txtZakatCal"
+                android:gravity="center"
+                android:text="Islamic Calender"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llSalah"
+            android:layout_gravity="center"
+            android:layout_marginRight="40dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/img10Surah"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:background="@drawable/storyicon"
+                android:backgroundTint="#33aaff"
+                android:src="@drawable/ic_baseline_music_note_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img10Surah"
+                android:layout_marginTop="10dp"
+                android:text="10 Surah's"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llsettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llZakat"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imgSetting"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/txtZakatCal"
+                android:layout_toRightOf="@+id/img10Surah"
+                android:background="@drawable/storyicon"
+                android:backgroundTint="#33aaff"
+                android:src="@drawable/ic_baseline_settingss_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgSetting"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Settings"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llIslamCal"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imgHelp"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/txtIsalmicCal"
+                android:background="@drawable/storyicon"
+                android:backgroundTint="#33aaff"
+                android:src="@drawable/ic_baseline_helps_outline_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgHelp"
+                android:layout_marginTop="10dp"
+                android:text="Help"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/ll2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/styleforlogoutbutton"
+        android:drawableEnd="@drawable/ic_baseline_logout_24"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="40dp"
+        android:text="Logout" />
+
+</RelativeLayout>

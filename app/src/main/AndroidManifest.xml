@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.moha">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Moha"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".ProfileSettingActivity"></activity>
+        <activity android:name=".HelpActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".TenSurahActivity" />
+        <activity android:name=".IslamicCalenderActivity" />
+        <activity android:name=".ZakatCalculatorActivity" />
+        <activity android:name=".SalahTimingActivity" />
+        <activity android:name=".QuranSelectPlanActivity" />
+        <activity android:name=".QuranReadingActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".BasicQuidaActivity" />
+        <activity android:name=".QuranPurchaseActivity" />
+        <activity android:name=".UserSelectActivity" />
+        <activity android:name=".LoginRegisterActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".OTPActivity" />
+        <activity android:name=".TermsAcivity" />
+        <activity android:name=".BottomActivity" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
